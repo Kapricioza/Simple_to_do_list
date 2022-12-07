@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+:root{
+    --pink:#EC4899;
+    --purple:#8B5Cf6;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(24deg, var(--pink),var(--purple));
+    background-repeat: no-repeat;
+    
+}
+
+.cointaier{
+    display: flex;
+    border: 2px solid black;
+    min-height: 650px;
+    width: 700px;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 25px;
+    -webkit-box-shadow: 20px 26px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 20px 26px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 20px 26px 24px 0px rgba(66, 68, 90, 1);
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+h2{
+    margin: 8px;
+    margin-left: -5px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.submit{
+    background-image:linear-gradient(to right, var(--pink), var(--purple) ) ;
+    border: none;
+    color: var(--pink);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.placeholder{
+    margin-top: 25px;
+    
+}
+#text{
+    outline: none;
+    border: 1px;
+    border-bottom: 1.75px solid black;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+.clear.btn{
+    background-color: #fff;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+.clear{
+    display: flex;
+    text-align: center;
+    position: static;
+    justify-content: center;
+}
+header{
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+.task{
+    overflow:hidden;
+}
+.content, .action{
+    border: none;
+    outline: none;
+    appearance: none;
+    background: none;
+}
+.task-list{
+    padding: 1rem;
+}
+button, input{
+    outline: none;
+    border: none;
+    appearance: none;
+    background: none;
+}
+#task .task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius:1rem ;
+}
+#task .content .task{
+    flex: 1 1 0%;
+}
+#task .content .task .text{
+    color:rgb(18, 18, 18);
+    font-size: 1.11rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+#task .content .task .text:not(:read-only){
+    color: var(--pink);
+}
+#task .content .action{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.content, .action, input, button{
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    font-size: 1.11rem;
+    font-weight: 700;
+    transition: 0.4s;
+}
+#text, .submit, input:hover{
+    opacity: 0.8;
+}
+#text, .submit, input:active{
+    opacity: 0.6;
+}
+.content, .action, button:hover{
+    opacity: 0.8;
+}
+.content, .action, button:active{
+    opacity: 0.6;
+}
+.content .action, .edit{
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#text{
+    cursor:text;
+}
+.text{
+    cursor:default;
+}
+
+.content .action, .delete{
+    color: crimson;
+}
